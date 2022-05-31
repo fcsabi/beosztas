@@ -1,23 +1,13 @@
 /*
 * File: MainFrame.java
 * Author: Farkas Csaba
-* Copyright: 2021, Nagy János
-* Group: Szoft V
-* Date: 2021-09-03
-* Github: https://github.com/janos/
+* Copyright: 2022,Farkas Csaba
+* Group: Szoft I/N
+* Date: 2022-05-31
+* Github: https://github.com/fcsabi/
 * Licenc: GNU GPL
 */
-
-
-
-
-
-
-
-
-
 package views;
-
 import java.awt.BorderLayout;
 import java.awt.Component;
 import java.awt.Dimension;
@@ -25,7 +15,6 @@ import java.awt.FlowLayout;
 import java.awt.PopupMenu;
 import java.util.ArrayList;
 import java.util.List;
-
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JList;
@@ -41,21 +30,22 @@ public class MainFrame extends JFrame {
     
     
     public MainFrame() {
+        System.out.println("Farkas Csaba, 2022-05-31 ");
         this.setMainComponent();
         this.setMainPanel();
         this.setMainFrame();
         List<String> myList = new ArrayList<>(10);
-        for (int index = 0; index < 10;index++ ) {
-            myList.add("Sashegyi Zoltán ");
-            myList.add("Nagy Krisztián ");
-            myList.add("Kiss Béla ");
-            myList.add("Erős Pista ");
-            myList.add("Vicc Elek ");
-            myList.add("Nagy István ");
-            myList.add("Béla Bá ");
-            myList.add("Farkas Csaba ");
-            myList.add("Iványi Áron ");
-            myList.add("Géza ");
+        for (int index = 0; index < 10;index=10 ) {
+            myList.add("Takaritó ");
+            myList.add("Mosogató ");
+            myList.add("Programozó ");
+            myList.add("Asztalos ");
+            myList.add("Villanyszerelő ");
+            myList.add("Épités mérnők");
+            myList.add("szakosztály vezető ");
+            myList.add("Kovács ");
+            myList.add("Sepergető ");
+            myList.add("Kertész ");
          }
          final JList<String> list = new JList<String>(myList.toArray(new String[myList.size()]));
 
@@ -66,6 +56,7 @@ public class MainFrame extends JFrame {
         this.goButton = new JButton("Gomb,nem csinál semmit");
         this.mainPanel=new JPanel();
         this.mainScrollPane=new JScrollPane(mainPanel);
+        System.out.println("Farkas Csaba, 2022-05-31 ");
        
         
         
@@ -77,7 +68,7 @@ public class MainFrame extends JFrame {
         this.mainPanel.add(mainScrollPane,BorderLayout.CENTER);     
         this.mainPanel.add(this.goButton, BorderLayout.SOUTH); 
         //this.mainScrollPane.add(new ArrayList <String>());
-        
+        System.out.println("Farkas Csaba, 2022-05-31 ");
 
 
        
@@ -89,5 +80,6 @@ public class MainFrame extends JFrame {
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setSize(300, 400);
         this.setVisible(true);
+        System.out.println("Farkas Csaba, 2022-05-31 ");
     }
 }
